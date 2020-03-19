@@ -160,6 +160,12 @@ const parseColor = color => {
   };
 };
 
+const parseToken = token => {
+  let tokenName = token.split('!')[1].split('}')[0];
+  tokenName = _.camelCase(tokenName);
+  return tokenName;
+};
+
 const convertFontWeight = weightString => {
   const weight = WEIGHT_MAP[weightString.trim()];
 
