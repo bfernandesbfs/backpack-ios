@@ -7,6 +7,7 @@
 
 **Fixed:**
 - Backpack/Color:
+  - Colours whose values are already defined now reference that colour, instead of redefining it.
   - Dynamic colours are now defined using pre-defined Backpack colour properties.
 
 **Fixed:**
